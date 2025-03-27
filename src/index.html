@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Footer Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Full-width green footer -->
+    <footer class="bg-[#659f8f] w-full text-black">
+      <div class="container mx-auto px-4 py-8 sm:px-6 sm:py-12">
+        <!-- Responsive Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <!-- Newsletter Section (Full width on mobile, 2 cols on desktop) -->
+          <div class="md:col-span-2">
+            <h2 class="text-xl sm:text-2xl font-bold mb-4">
+              Subscribe to our newsletter for updates.
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-3 max-w-xl">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="px-4 py-3 rounded flex-grow focus:outline-none"
+              />
+              <button
+                class="px-6 py-3 bg-[#d86943] text-white font-semibold rounded hover:bg-opacity-90 transition whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3 sm:mb-4">Quick Link</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline block">Home</a></li>
+              <li><a href="#" class="hover:underline block">Who We Are</a></li>
+              <li>
+                <a href="#" class="hover:underline block">Our Philosophy</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technologies Section -->
+          <div>
+            <h3 class="font-semibold text-lg mb-3 sm:mb-4">Technologies</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:underline block">HTML</a></li>
+              <li><a href="#" class="hover:underline block">CSS</a></li>
+              <li><a href="#" class="hover:underline block">JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr class="border-[#d86943] my-6 sm:my-8" />
+
+        <!-- Logo with Double Text Effect -->
+        <div class="relative inline-block text-white">
+          <span class="text-2xl sm:text-3xl font-bold relative z-10"
+            >CODESPACE</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
